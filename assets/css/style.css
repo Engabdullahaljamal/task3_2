@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+p {
+    color: #412617;
+
+}
+
+
+.nav_bar,
+.end_nav {
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    background-color: #30302f;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+
+
+}
+
+.f_p,
+.s_p {
+    display: flex;
+    gap: 10vw;
+
+}
+
+.end_nav {
+    justify-content: center;
+    gap: 10vw;
+}
+
+
+
+.nav_bar a,
+.end_nav a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.nav_bar {
+    position: fixed;
+    z-index: 3;
+}
+
+.container {
+    position: relative;
+
+}
+
+.container img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .content {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.2);
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    padding: 20px;
+    border-radius: 4px;
+
+
+}
+
+.container h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+#about_us,
+#our_services,
+#Specializations,
+#our_teacher,
+#plans,
+#contact {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+#about_us p {
+    font-size: 20px;
+
+}
+
+#our_services,
+#our_teacher,
+#contact {
+    background-color: #fcd5bf;
+}
+
+.big_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.first_three {
+
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.second_two {
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.first_three div,
+.second_two div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+}
+
+
+#our_teacher .big_card {
+    padding-left: 30px;
+    height: max-content;
+}
+
+#our_teacher .big_card p {
+    width: max-content;
+
+
+}
+
+.teacher_con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.pp {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+
+#plans {
+    height: max-content;
+    padding: 30px 0px;
+}
+
+
+
+#plans .big_card div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.card {
+    width: 250px;
+    height: 450px;
+    background-color: wheat;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card img {
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+ul {
+    padding-right: 100px;
+}
+
+.yellow {
+    width: 200px;
+    height: 90px;
+    background-color: #fce98c;
+    border: 1px solid #fed700;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10PX;
+    border-radius: 5px;
+
+
+}
+
+
+#plans .card .yellow {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+input,
+textarea {
+    width: 350px;
+    height: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+}
+
+textarea {
+    height: 30px;
+}
+
+
+#sub {
+    width: 150px;
+    height: 25px;
+    background-color: #30302f;
+    margin-top: 20px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+
+.info {
+    margin-top: 30px;
+}
+
+.info h1 {
+    margin-bottom: 10px;
+}
+
+.c_i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover {
+    color: #fcd5bf;
+}
+
+.card:hover {
+    background-color: #fcd5bf;
+
+}
+
+
+
+
+@media screen and (max-width:736px) {
+    .nav_bar {
+        height: max-content;
+        gap: 10px 30px;
+    }
+
+    .container img {
+        margin-top: 30px;
+        height: 96vh;
+    }
+
+    .container .content {
+        top: 30%;
+
+    }
+
+    .f_p {
+        padding-top: 10px;
+        display: flex;
+
+    }
+
+    .s_p {
+        padding-bottom: 10px;
+        display: flex;
+    }
+
+    #about_us p {
+        width: 280px;
+
+    }
+
+    .first_three,
+    .second_two {
+        padding-left: 10px;
+        gap: 40px;
+    }
+
+    #Specializations,
+    #our_teacher,
+    #plans {
+        height: max-content;
+        padding: 20px 0px;
+    }
+
+    input,
+    textarea {
+        width: 250px;
+        height: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 2px;
+    }
+
+    #sub {
+        margin-left: 50px
+    }
+}
