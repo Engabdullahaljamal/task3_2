@@ -279,6 +279,11 @@ textarea {
     flex-direction: column;
 }
 
+.form input,
+.form textarea {
+    margin-bottom: 15px;
+}
+
 a:hover {
     color: #fcd5bf;
 }
