@@ -284,6 +284,10 @@ textarea {
     margin-bottom: 15px;
 }
 
+.form label {
+    margin-bottom: 5px;
+}
+
 a:hover {
     color: #fcd5bf;
 }
